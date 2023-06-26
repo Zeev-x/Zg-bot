@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "telegraf": "^4.12.2",
+    "zeev-gempa": "^1.0.3"
+  },
+  "name": "telez-bot",
+  "version": "1.0.0",
+  "description": "Beta version",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start" : "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "telez-bot"
+  ],
+  "author": "zeev-x",
+  "license": "ISC"
+}
