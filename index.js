@@ -30,7 +30,7 @@ bot.command("menu", (ctx) => {
 bot.action("gempa", (ctx) => {
   zeev.gempa().then(result => {
     console.log(result);
-    var mess = `INFO GEMPA TERKINI\n\nTanggal : ${result.Tanggal}\nJam : ${result.Jam}\nLintang : ${result.Lintang}\nBujur : ${result.Bujur}\nMagnitudo : ${result.Magnitude}\nKedalaman : ${result.Kedalaman}\nWilayah : ${result.Wilayah}`;
+    var mess = `INFO GEMPA TERKINI\n\nWaktu : ${result.waktu}\nLintang : ${result.lintang}\nBujur : ${result.bujur}\nMagnitudo : ${result.magnitudo}\nKedalaman : ${result.kedalaman}\nWilayah : ${result.wilayah}\n\n${result.zeev}`;
     bot.telegram.sendMessage(ctx.chat.id, mess, {});
   });
 });
