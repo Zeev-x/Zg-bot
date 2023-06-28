@@ -1,8 +1,8 @@
 const { Telegraf } = require("telegraf");
 const { message } = require("telegraf/filters");
 const zeev = require("zeev-gempa");
+const Token = require("./data/token");
 
-const Token = "Your_Token"; //Kamu bisa mendapatkannya dari botfather
 const bot = new Telegraf(Token);
 
 bot.start((ctx) => {
